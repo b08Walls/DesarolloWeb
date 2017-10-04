@@ -1,0 +1,42 @@
+<html><!--estas de aquí son etiquetas, todo lo que esta entre mayor y menor
+las etiquetas llevan palabras reservadas.
+
+HTML solo tiene dos diviciones, head y body-->
+	<head><!--El titulo de la pestaña del navegador y más adelante cosas de jscripts,
+	cosas que no estan en la página-->
+		<title> LA PAGINA DE OCTAVIO</title>
+
+		<script>
+			function sum()
+			{
+				var x = document.getElementById("x").value;
+				var y = document.getElementById("y").value;
+
+				var result = document.getElementById("z");
+				var z = parseFloat(x)*parseFloat(x)+parseFloat(y)*parseFloat(y);
+				var z = Math.sqrt(parseFloat(z));
+				result.value = z;
+			}
+
+		</script>
+
+	</head>
+	<!--Ahora va body, todo lo que se muestra en la página.-->
+	<body>
+		<h1> FORMULARIO </h1><!--para un titulo la etiqueta debe de ser h1, h2.. hasta h5 cambiando poco a poco el tamaño de la letra siendo h1 la más grande y h5 la mas pequeña. Este texto por default se pone como en negritas, pero no lo es, es un titulo-->
+		<p> El TEOREMA DE PITAGORAS DICE: El cuadrado de la hipotenusa de un triangulo rectangulo es igual a la suma del cuadrado de los catetos</p>
+		<p> by octavio :D </p><!--P es para parrafo, aquí va todo lo que sea texto con las etiquetas de parrafo y de titulo siempre cuando se cierra hace un enter para generar un espacio.-->
+		
+		<br>
+		CATETO 1 = <input type = "text" id = "x"> </br>
+		CATETO 2 = <input type = "text" id = "y"> </br>
+		
+		HIPOTENUSA = <input type = "text" id = "z"> </br>
+
+		<button onclick = "sum()"> CALCULAR </button>
+
+		<p> by Tavo </p>
+
+		<a href = "/"> <button> REGRESAR </button>  </a>
+	</body>
+</html><!--todas las etiquetas se abren y se cierran, para cerrar /-->

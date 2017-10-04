@@ -1,0 +1,40 @@
+<html><!--estas de aquí son etiquetas, todo lo que esta entre mayor y menor
+las etiquetas llevan palabras reservadas.
+
+HTML solo tiene dos diviciones, head y body-->
+	<head><!--El titulo de la pestaña del navegador y más adelante cosas de jscripts,
+	cosas que no estan en la página-->
+		<title> LA PAGINA DE OCTAVIO</title>
+
+		<script>
+			function sum()
+			{
+				var x = document.getElementById("x").value;
+				var y = document.getElementById("y").value;
+
+				var result = document.getElementById("z");
+				var z = parseInt(x)+ parseInt(y);
+				result.value = z;
+			}
+
+		</script>
+
+	</head>
+	<!--Ahora va body, todo lo que se muestra en la página.-->
+	<body>
+		<h1> Suma con javascript :o </h1><!--para un titulo la etiqueta debe de ser h1, h2.. hasta h5 cambiando poco a poco el tamaño de la letra siendo h1 la más grande y h5 la mas pequeña. Este texto por default se pone como en negritas, pero no lo es, es un titulo-->
+		<p> by octavio :D </p><!--P es para parrafo, aquí va todo lo que sea texto con las etiquetas de parrafo y de titulo siempre cuando se cierra hace un enter para generar un espacio.-->
+		<br>
+		x = <input type = "text" id = "x"> </br>
+
+		y = <input type = "text" id = "y"> </br>
+
+		z = <input type = "text" id = "z"> </br>
+
+		<button onclick = "sum()"> sum </button>
+
+		<p> by Tavo </p>
+
+
+	</body>
+</html><!--todas las etiquetas se abren y se cierran, para cerrar /-->

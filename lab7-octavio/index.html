@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Lab6 - Microposts</title>
+
+
+<!-- Bootstrap -->
+<link href="css/bootstrap.min.css" rel="stylesheet">
+	
+</head>
+
+<body>
+
+<!-- Navigation section
+================================================== -->
+<section role="navigation">
+				
+
+
+	<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#"> Microposts </a>
+    </div>
+    <ul class="nav navbar-nav">
+     	<li><a href="#suma" >Usuarios</a></li>
+	<li><a href="#einstein" >Posts</a></li>
+    </ul>
+  </div>
+</nav>
+</section>
+
+
+
+
+<!-- Usuarios -->
+<section id="suma">
+ <div class="container">
+  <div class="row">
+
+   <div class="jumbotron text-center">
+    <p>Menu</p>
+   </div>
+			  
+   <form>
+       <div class="form-group">
+     <input type="text" class="form-control" id="marca"  placeholder="marca">
+    </div>
+ 
+    <div class="form-group">
+      <input type="text" class="form-control" id="tipo" placeholder="tipo">
+    </div>
+
+    <div class="form-group">
+      <input type="text" class="form-control" id="ml" placeholder="ml">
+    </div>
+
+    <div class="form-group">
+      <input type="text" class="form-control" id="presentacion" placeholder="presentacion">
+    </div>
+
+    <div class="form-group">
+      <input type="text" class="form-control" id="nombre" placeholder="nombre">
+    </div>
+
+    <div class="form-group">
+      <input type="text" class="form-control" id="precio" placeholder="precio">
+    </div>
+
+    <div class="form-group">
+      <input type="text" class="form-control" id="ingredientes" placeholder="ingredientes">
+    </div>
+
+    <div class="form-group">
+      <input type="text" class="form-control" id="tiempo" placeholder="tiempo">
+    </div>
+
+    <div class="form-group">
+          <button type="button" class="btn btn-primary" onclick="insertBeer()"> ( C ) reate  Beer</button>
+          <button type="button" class="btn btn-danger" onclick="updateBeer()"> ( U ) pdate Beer</button>
+
+         </div>
+
+         <div class="form-group">
+          <button type="button" class="btn btn-primary" onclick="getAllBeers()"> ( R ) eadAll Beers</button>
+         </div>
+
+   <div class="form-group">
+          <button type="button" class="btn btn-primary" onclick="insertFood()"> ( C ) reate Food</button>
+          <button type="button" class="btn btn-danger" onclick="updateFood()"> ( U ) pdate Food</button>
+
+         </div>
+
+         <div class="form-group">
+          <button type="button" class="btn btn-primary" onclick="getAllFoods()"> ( R ) eadAll Foods</button>
+         </div>
+
+   </form>
+   <!--AQUI VA DIV DE ABAJO LSTUSRS, va a fuera del form para que el form no aumente dinamicamente-->
+   <div>
+     <!--AQUI-->
+     <div class ="row" id = "lstUsers">
+   </div>
+
+   <div class ="row" id = "lstBeers">
+   </div>
+
+   <div class ="row" id = "lstFoods">
+   </div>
+
+  </div>
+ </div>		
+</section>
+
+
+
+<!-- Footer section ====== -->
+<footer>
+	<!-- google map -->
+		<div>
+					<p> &copy; 2017 | by adsoft-Sito</p>
+		</div>
+</footer>
+
+
+
+
+
+
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+<script src="app/usuarios.js"></script>
+<script src="app/beer.js"></script>
+<script src="app/comida.js"></script>
+
+
+</body>
+
+</html>

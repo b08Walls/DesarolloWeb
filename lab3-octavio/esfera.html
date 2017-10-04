@@ -1,0 +1,39 @@
+<html><!--estas de aquí son etiquetas, todo lo que esta entre mayor y menor
+las etiquetas llevan palabras reservadas.
+
+HTML solo tiene dos diviciones, head y body-->
+	<head><!--El titulo de la pestaña del navegador y más adelante cosas de jscripts,
+	cosas que no estan en la página-->
+		<title> LA PAGINA DE OCTAVIO</title>
+
+		<script>
+			function sum()
+			{
+				var x = document.getElementById("x").value;
+
+				var result = document.getElementById("z");
+				var z = parseFloat(x)*parseFloat(x)*parseFloat(x)*Math.PI;
+				result.value = z;
+			}
+
+		</script>
+
+	</head>
+	<!--Ahora va body, todo lo que se muestra en la página.-->
+	<body>
+		<h1> FORMULARIO </h1><!--para un titulo la etiqueta debe de ser h1, h2.. hasta h5 cambiando poco a poco el tamaño de la letra siendo h1 la más grande y h5 la mas pequeña. Este texto por default se pone como en negritas, pero no lo es, es un titulo-->
+		<p> La formula del VOLUMEN DE UNA ESFERA es PI * R * R * R</p>
+		<p> by octavio :D </p><!--P es para parrafo, aquí va todo lo que sea texto con las etiquetas de parrafo y de titulo siempre cuando se cierra hace un enter para generar un espacio.-->
+		
+		<br>
+		RADIO = <input type = "text" id = "x"> </br>
+		
+		VOLUMEN DE LA ESFERA = <input type = "text" id = "z"> </br>
+
+		<button onclick = "sum()"> CALCULAR </button>
+
+		<p> by Tavo </p>
+
+		<a href = "/"> <button> REGRESAR </button>  </a>
+	</body>
+</html><!--todas las etiquetas se abren y se cierran, para cerrar /-->

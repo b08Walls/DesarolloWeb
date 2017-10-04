@@ -1,0 +1,2 @@
+helloworld: helloworld-octavio.appspot.com
+lab2: lab2-octavio.appspot.com
